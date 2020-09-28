@@ -11,7 +11,6 @@ IPAddress gateway(192,168,1,1);  //This part is optional
 IPAddress subnet(255,255,255,0);
 
 ESP8266WebServer server(80);
-WiFi.mode(WIFI_AP_STA); // Sets the ESP8266 to both Station and AP mode
 
 uint8_t LED1pin = D7;
 bool LED1status = LOW;
