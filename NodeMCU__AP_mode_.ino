@@ -16,6 +16,8 @@ uint8_t LED1pin = D7;
 bool LED1status = LOW;
 
 void setup() {
+  
+  WiFi.mode(WIFI_AP_STA); // Sets the ESP8266 to both Station and AP mode
   Serial.begin(115200);
   pinMode(LED1pin, OUTPUT);
 
